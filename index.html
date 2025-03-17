@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+
+    <!-- ========== Start google fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+    <!-- ========== End google fonts ========== -->
+
+    <!-- ========== Start fontAwesome library ========== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <!-- ========== End fontAwesome library ========== -->
+
+    <!-- ========== Start bootstrap css ========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- ========== End bootstrap css ========== -->
+
+    <!-- ========== Start style css ========== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ========== End style css ========== -->
+
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/wraper.png" class="w-100" alt="game image">
+    </header>
+    <nav class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9 my-nav mx-auto">
+        <div class="container">
+            <h5 class="navbar-brand text-uppercase" href="#">
+                <img src="./images/logo-sm.png" alt="logo photo" width="40" />
+                Game Reviews
+            </h5>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text">
+                    <li class="nav-item">
+                        <a role="button" class="nav-link text-uppercase actives"  aria-current="page" data-category="mmorpg">mmorpg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button" class="nav-link text-uppercase text-white" data-category="shooter">shooter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button" class="nav-link text-uppercase text-white" data-category="sailing">sailing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button" class="nav-link text-uppercase text-white" data-category="permadeath">permadeath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button" class="nav-link text-uppercase text-white" data-category="superhero">superhero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a role="button" class="nav-link text-uppercase text-white" data-category="pixel">pixel</a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+    </nav>
+
+    <div id="games">
+        <div class="container">
+            <div id="games-body" class="row g-4 my-4">
+             
+              
+               
+             
+            
+               
+            </div>
+        </div>
+    </div>
+   
+    <!-- ========== Details Section ========== -->
+    <section id="details" class="d-none">
+        <div class="container">
+        <!-- Modal -->
+         
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Details Game</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body overflow-y-auto">
+                        <div class="container">
+                           <div class="row g-4 " id="detailGames">
+                               
+                           </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ========== Loading Section ========== -->
+    
+        <div class="loading d-none">
+            <span class="loader"></span>
+        </div>
+  
+
+
+
+
+
+
+
+
+
+    <!-- ========== Start bootstrap js ========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- ========== End bootstrap js ========== -->
+
+    <!-- ========== Start main js ========== -->
+    <script src="./js/main.js" type="module"></script>
+    <!-- ========== End main js ========== -->
+
+</body>
+
+</html>

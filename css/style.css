@@ -1,0 +1,162 @@
+/**header style**/
+header img {
+  width: 100%;
+  max-height: 30vh;
+  object-fit: cover;
+  vertical-align: middle;
+}
+/**header style**/
+
+/**nav style**/
+.my-nav {
+  background-color: rgb(58, 73, 123) !important;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+.actives {
+  color: #09c !important;
+}
+.my-nav h5 {
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+  -moz-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  -o-transform: translateY(5px);
+  font-size: 20px;
+  font-weight: 500;
+}
+.my-nav .nav-link.active,
+.my-nav .nav-link {
+  font-size: 12.25px;
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
+  color: white;
+}
+.my-nav .nav-link {
+  transition: color 0.5s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+}
+/* .my-nav .nav-link:hover {
+  color: #09c !important;
+} */
+/**nav style**/
+/**games section style**/
+#games-body .card {
+   filter: grayscale(0.7);
+   transition: transform 0.5s ease-in-out, filter 0.5s 0.1s ease-in-out;
+   -webkit-transition: transform 0.5s ease-in-out, filter 0.5s 0.1s ease-in-out;
+   -moz-transition: transform 0.5s ease-in-out, filter 0.5s 0.1s ease-in-out;
+   -ms-transition: transform 0.5s ease-in-out, filter 0.5s 0.1s ease-in-out;
+   -o-transition: transform 0.5s ease-in-out, filter 0.5s 0.1s ease-in-out;
+
+}
+#games-body .card:hover {
+   transform: scale(1.07);
+   -webkit-transform: scale(1.07);
+   -moz-transform: scale(1.07);
+   -ms-transform: scale(1.07);
+   -o-transform: scale(1.07);
+   filter: grayscale(0);
+   cursor: pointer;
+}
+.card-body img {
+  cursor: pointer;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.card-body h3 {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
+  color: #fff;
+}
+.card-body .inner span {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+}
+.card-body p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Comfortaa", cursive;
+}
+.card-footer .s1,
+.card-footer .s2 {
+  font-size: 10.5px;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  background-color: #32383e;
+  margin-block: 10px;
+}
+/**games section style**/
+
+/** detail style**/
+
+#details  .modal-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#details .modal-header {
+  margin-inline: 70px;
+}
+/** detail style**/
+
+/** loading style**/
+.loading  {
+   position: fixed;
+   z-index: 9999;
+   inset: 0;
+   background-color: #272b30e3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.loader {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   display: inline-block;
+   border-top: 4px solid #fff;
+   border-right: 4px solid transparent;
+   box-sizing: border-box;
+   animation: rotation 1s linear infinite;
+   position: relative;
+   -webkit-animation: rotation 1s linear infinite;
+}
+.loader::after {
+   content: "";
+   box-sizing: border-box;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border-left: 4px solid #ff3d00;
+   border-bottom: 4px solid transparent;
+   animation: rotation 0.5s linear infinite reverse;
+   -webkit-animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+/** loading style**/
